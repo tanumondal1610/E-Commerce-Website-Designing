@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  .header{
+  background: radial-gradient(#fff,#9dd6dd);
+}
+  .navbar{
+      display: flex;
+      align-items: center;
+      padding: 20px;
+  }
+  nav{
+      flex: 1;
+      text-align: right;
+  }
+  nav ul{
+      display: inline-block;
+      list-style-type: none;
+  }
+  nav ul li{
+      display: inline-block;
+      margin-right: 20px;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+  }
+.navbar a:hover,.navbar li a.active{
+      color: rgb(98, 102, 102);
+  }
+  .navbar img:hover{
+      background-color: rgb(129, 123, 123);
+  }
+  .menu{
+      margin-left:40px;
+      width: 25px;
+      display: none;
+  }
+  .container{
+      max-width: 1200px;
+      margin: auto;
+      padding: 28px 7px;
+  }
+  .body{
+      border: 10px solid #b1a8a8;
+      background-color: honeydew;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around; 
+  }
+/*------------------   products  --------------   */
+.col-md{
+   display: inline-block;
+   padding: 22px 37px;
+   transition: transform 0.5s;
+
+}
+.p-row1 {
+   font-weight: bold;
+}
+.p-row1 p{
+    font-weight: normal;
+  color: rgb(105, 101, 101);
+}
+.p-row1 h2{
+   color: rgb(255, 94, 0);
+   text-align: center;
+}
+.rating{
+   background-color: chartreuse;
+   width: 34px;
+}
+.col-md:hover{
+   transform: translateY(-5px);
+}
+
+
+
+/*------------------   footer  --------------   */
+
+.sec{
+  display: inline-block;
+  padding: 40px;
+}
+.footer{
+  color: rgb(248, 249, 250);
+  background: black;
+}
+
+/*------------------   media quary  --------------   */
+
+@media only screen and (max-width:800px){
+  nav ul{
+      position: absolute;
+      top:102px;
+      right:0px;
+      width: 28%;
+      background:white;
+      overflow: hidden;
+     
+  }
+  nav ul li{
+      display:block;
+      
+  }
+  .menu{
+      display: block;
+      cursor: pointer;
+  }
+  .body{
+      text-align: center;
+      padding: 100px 12px;
+  }
+  .row{
+      text-align: center;
+  }
+
+}

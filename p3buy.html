@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashionstore||E-commerce website Designing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 28px 7px;
+        }
+
+        /*---------------- BUY ------------------*/
+        .body {
+
+            text-align: center;
+            padding: 100px 12px;
+        }
+
+        .buy {
+            border: 10px solid #b1a8a8;
+            background-color: rgb(84, 197, 212);
+
+
+
+        }
+
+        input {
+            margin: 10px 12px;
+            border: 2px solid black;
+            padding: 5px 12px;
+            border-radius: 20px;
+            width: 20%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="container">
+            <div class="form"></div>
+
+            <div class="navbar">
+                <div class="logo">
+                    <img src="fashion store\logo.gif" width="160px">
+                </div>
+
+            </div>
+            <div class="body">
+
+                <div class="buy">
+
+                    <div class="image">
+                        <img src="fashion store\p3.jpg" width="100px">
+                    </div>
+
+                    price:₹500
+                    <form action="3buy.php" method="post">
+                        <div class="customer">
+                            Name : <input type="text" name="name" placeholder=" type your name"> <br>
+                            Address: <input type="text" name="address" placeholder="type your address">
+                        </div>
+
+                        <input type="submit" style="
+                        background: rgb(255 136 38);
+                        color: white;
+                        padding: 9px 15px;
+                        width: 10%;
+                        border: 2px solid rgb(249 248 245);
+                        box-shadow: 0 0 28px 0;
+                        cursor: pointer;
+                        " value="BUY">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

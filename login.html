@@ -1,0 +1,98 @@
+<?php
+    session_start(); // Right at the top of your script
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="account.css">
+    
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                    <img src="fashion store\logo.gif" width="160px">
+                </div>
+                <nav>
+                    <ul id="menuitem">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#" class="active">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="my cart.html"> <img src="fashion store\cart.png" width="25px"></a>
+                <img src="fashion store\menu.png" class="menu" onclick="menutoggle()">
+            </div>
+
+            <!-----------------account page--------------------------->
+
+            <div class="account-page">
+                <div class="form">
+                    <div class="login-form">
+                        <div class="form-2">
+                            <span class="login-header">Login</span>
+                            <span class=""><a href="./register.html">Register</a></span>
+                        </div>
+                        <form id="LoginForm" name="f1" action="authentication.php" onsubmit="return validation()"
+                            method="POST">
+
+                            <input type="text" id="user" name="user" placeholder="User Name" />
+                            <input type="password" id="pass" name="pass" placeholder="Password" />
+                            <input type="submit" id="btn" value="Login" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------menu toggle using javascriept--------------------->
+    <script>
+        var menuitem = document.getElementById("menuitem");
+
+        menuitem.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuitem.style.maxHeight == "0px") {
+
+                menuitem.style.maxHeight = "200px"
+            }
+            else {
+
+                menuitem.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script>
+        function validation() {
+            var id = document.f1.user.value;
+            var ps = document.f1.pass.value;
+            if (id.length == "" && ps.length == "") {
+                alert("User Name and Password fields are empty");
+                return false;
+            }
+            else {
+                if (id.length == "") {
+                    alert("User Name is empty");
+                    return false;
+                }
+                if (ps.length == "") {
+                    alert("Password field is empty");
+                    return false;
+                }
+            }
+        }  
+    </script>
+
+
+</body>
+
+</html>

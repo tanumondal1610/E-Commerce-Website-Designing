@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashionstore||E-commerce website Designing</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  .header{
+  background: radial-gradient(#fff,#9dd6dd);
+}
+  .navbar{
+      display: flex;
+      align-items: center;
+      padding: 20px;
+  }
+  nav{
+      flex: 1;
+      text-align: right;
+  }
+  nav ul{
+      display: inline-block;
+      list-style-type: none;
+  }
+  nav ul li{
+      display: inline-block;
+      margin-right: 20px;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+  }
+.navbar a:hover,.navbar li a.active{
+      color: rgb(98, 102, 102);
+  }
+  .navbar img:hover{
+      background-color: rgb(207, 235, 236);
+  }
+  .menu{
+      margin-left:40px;
+      width: 25px;
+      display: none;
+  }
+  .container{
+      max-width: 1200px;
+      margin: auto;
+      padding: 28px 7px;
+  }
+  /*---------------- My Cart ------------------*/
+  .mycart{
+      border: 10px solid #b1a8a8;
+      background-color: rgb(114 223 221);
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+     margin: auto;
+     padding-left: 22px;
+
+  }
+  table{
+      width: 100%;
+      border-collapse: collapse;
+  }
+  th{
+      color: rgb(245, 242, 237);
+      background: orange;
+    text-align: left;
+    font-weight: bold;
+  font-size: 18px;
+  }
+ 
+  button{
+      border: 2px solid rgb(255, 255, 255);
+      background:#ff6105;
+      color: white;
+      height: 30px;
+      padding: 6px 20px;
+      box-shadow: 0 0 28px 0;
+  }
+  button:hover{
+  background: #ffb049;
+}
+/*------------------   footer  --------------   */
+
+.sec{
+  display: inline-block;
+  padding: 40px;
+}
+.footer{
+  color: rgb(248, 249, 250);
+  background: black;
+}
+
+/*------------------   media quary  --------------   */
+
+@media only screen and (max-width:800px){
+  nav ul{
+      position: absolute;
+      top:102px;
+      right:0px;
+      width: 28%;
+      background:white;
+      overflow: hidden;
+     
+  }
+  nav ul li{
+      display:block;
+      
+  }
+  .menu{
+      display: block;
+      cursor: pointer;
+  }
+  .body{
+      text-align: center;
+      padding: 100px 12px;
+  }
+  .row{
+      text-align: center;
+  }
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="container">
+
+            <div class="navbar">
+                   <div class="logo">
+                    <img src="fashion store\logo.gif" width="160px">
+                     </div>
+                   <nav >
+                        <ul id="menuitem">
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="Products.html">Products</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="login.html">Account</a></li>
+                        </ul>
+                    </nav>
+                 <a href="#" class="active"><img src="fashion store\cart.png" width="25px"></a>
+                    <img src="fashion store\menu.png" class="menu" onclick="menutoggle()">
+                       
+             </div>
+
+               <div class="mycart">
+                   <table>
+                       <tr>
+                           <th>Product</th>
+                           <th>Price</th>
+                           <th>cart</th>
+                       </tr>
+                         <tr>
+                             <td>
+                                 <div class="image">
+                                <img src="fashion store\p1.jpg" width="100px">
+                            </div>
+                             </td>
+                             <td>₹500</td>
+                             <td>
+                                <a href="p1buy.html"><button>Cart</button></a>
+                             </td>
+                         </tr>
+                          
+
+                         <tr>
+                            <td>
+                                <div class="image">
+                               <img src="fashion store\p2.jpg" width="100px">
+                           </div>
+                            </td>
+                            <td>₹600</td>
+                            <td>
+                                <a href="p2buy.html"><button>Cart</button></a>
+                            </td>
+                        </tr>
+                      
+
+                        <tr>
+                            <td>
+                                <div class="image">
+                               <img src="fashion store\p3.jpg" width="100px">
+                           </div>
+                            </td>
+                            <td>₹1000</td>
+                            <td>
+                                <a href="p3buy.html"><button>Cart</button></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="image">
+                               <img src="fashion store\p4.jpg" width="100px">
+                           </div>
+                            </td>
+                            <td>₹1249</td>
+                            <td>
+                                <a href="p4buy.html"><button>Cart</button></a>
+                            </td>
+                        </tr>
+                   </table>
+               </div>
+
+        </div>
+    </div>
+   
+
+     <!---------------------------footer------------------------------>
+     <div class="footer">
+        <div class="sec">
+            <h3>Download our App on your Mobile</h3><br>
+            <img src="fashion store\play-store.png" width="150px">
+            <img src="fashion store\app-store.png" width="150px">
+        </div>
+        <div class="sec"><img src="fashion store\logo.gif" width="180px"></div>
+        <div class="sec"><h4>Usefull links</h4>
+                           <p>
+                           <br> Contact Us<br>
+                            FAQ <br>
+                            T&C <br>
+                            Terms Of Use <br>
+                            Track Orders<br>
+                            Cancellation<br>
+                            Privacy policy</p></div>
+        <div class="sec"><img src="fashion store\original.jpg" width="50px">100% ORIGINAL guarantee for all products at FashionStore</div>
+
+    </div>
+
+
+    <!------------------------menu toggle using javascriept--------------------->
+    <script>
+        var menuitem = document.getElementById("menuitem");
+
+        menuitem.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitem.style.maxHeight == "0px")
+            {
+               
+                menuitem.style.maxHeight = "200px"
+            }
+            else
+            {
+
+                menuitem.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
